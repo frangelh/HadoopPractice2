@@ -2,6 +2,7 @@
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
 String currentWord = "";
 double amount = 0;
+println "Compras realizadas con visa"
 println "Tienda\tTotal"
 br.readLines().each{ line->
     def comp = line.split('\t')
