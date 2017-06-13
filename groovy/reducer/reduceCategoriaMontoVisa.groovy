@@ -12,10 +12,10 @@ br.readLines().each{ line->
         amount += currentAmount;
     } else {
         if(!currentWord.isEmpty()){
-            println "$currentWord\t$amount"
+            printf "%s\t%.02f\n",currentWord,amount
         }
         currentWord = key
         amount = currentAmount
     }
 }
-println "$currentWord\t$amount"
+printf "%s\t%.02f\n",currentWord,amount

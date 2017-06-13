@@ -2,7 +2,7 @@
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
 String currentWord = "";
 String maxCategoria = "";
-long maxAmountCategoria = 0;
+double maxAmountCategoria = 0;
 println "Categoria mas vendida"
 br.readLines().each{ line->
     def comp = line.split('\t')
@@ -19,4 +19,4 @@ br.readLines().each{ line->
         maxAmountCategoria = amount;
     }
 }
-println "$maxCategoria\t$maxAmountCategoria"
+printf "%s\t%.02f\n",maxCategoria,maxAmountCategoria
