@@ -1,8 +1,0 @@
-#!/usr/bin/python
-
-import sys
-for line in sys.stdin:
-    line = line.strip() 
-    words = line.split("\t") 
-    print ('%s\t%s' % (words[3], words[4]))
-    print ('%s\t%s' % (words[5], words[4]))
